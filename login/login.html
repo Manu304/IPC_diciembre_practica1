@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/login.css">
+</head>
+
+<body class="text-center">
+    <div class="contenedor">
+        <form action="" method="">
+            <img class="mb-4" src="../resources/images/login.png" alt="" width="90" height="90">
+            <h1 class="h3 mb-3 fw-normal">Inicio de Sesión</h1>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="admin" name="username">
+                <label for="floatingInput">Usuario</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña"
+                       name="password">
+                <label for="floatingPassword">Contraseña</label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="button" value="iniciar-sesion" onclick="login()">
+                Iniciar Sesión
+            </button>
+        </form>
+    </div>
+</body>
+<script src="../resources/js/popper.min.js"></script>
+<script src="../resources/js/bootstrap.min.js"></script>
+<script src="login.js"></script>
+
+</html>
