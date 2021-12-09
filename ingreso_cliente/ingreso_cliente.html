@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Cliente</title>
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/login.css">
+</head>
+
+<body>
+    <div class="container" style="padding-top: 50px; max-width: 500px;">
+
+        <form class="row g-3" method="" action="">
+            <h1>Ingreso Cliente</h1>
+            <div class="col-md-12">
+                <label for="inputUsername4" class="form-label">CUI</label>
+                <input type="text" class="form-control" name="cui" value="" id="cui">
+                <div class="fs-6" style="color: red;" id="error-cui" hidden>
+                    <p style="font-size: 14px"> Ingrese un CUI válido </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputUsername4" class="form-label">Nombres</label>
+                <input type="text" class="form-control" name="name" value="" id="name">
+            </div>
+            <div class="col-md-6">
+                <label for="inputUsername4" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" name="last-name" value="" id="last-name">
+            </div>
+            <div class="col-md-6">
+                <label for="inputUsername4" class="form-label">Departamento</label>
+                <input type="text" class="form-control" id="departamento" name="departamento">
+            </div>
+            <div class="col-md-6">
+                <label for="inputUsername4" class="form-label">Municipio</label>
+                <input type="text" class="form-control" id="municipio" name="municipio">
+            </div>
+
+            <div class="col-12">
+                <button type="button" class="btn btn-primary" onclick="ingresar()">Ingresar Cliente</button>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="../resources/js/popper.min.js"></script>
+    <script src="../resources/js/bootstrap.min.js"></script>
+    <script src="ingreso_cliente.js"></script>
+</body>
+
+</html>
