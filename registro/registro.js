@@ -6,12 +6,14 @@ const password = document.getElementById("password");
 const password_confirm = document.getElementById("password-confirm");
 
 const registrar = () => {
+    let errorPass = document.getElementById("error-password");
     if (password.value !== password_confirm.value) {
         //alert("Las contraseñas no coinciden");
-        let errorPass = document.getElementById("error-password");
+        
         errorPass.removeAttribute("hidden");
     } else {
         console.log("Nombres: " + nombre.value + " \nApellidos: " + apellidos.value + "\nE-mail: " + email.value + "\nContraseña: " + password.value);
+        errorPass.setAttribute("hidden", " ");
     }
 }
 
