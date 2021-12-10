@@ -1,4 +1,3 @@
-const datosRegistro = [];
 const nombre = document.getElementById("name");
 const apellidos = document.getElementById("last-name");
 const email = document.getElementById("email");
