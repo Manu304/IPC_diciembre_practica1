@@ -6,5 +6,16 @@ const municipio = document.getElementById("municipio");
 const errorCui = document.getElementById("error-cui");
 
 const ingresar = () => {
-    console.log("CUI: " + CUI.value + "\nNombres: " + nombre.value + "\nApellidos: " + apellido.value + "\nDepartamento: " + departamento.value + "\nMunicipio: " + municipio.value);
+    if (!isCUIValid(CUI.value)) {
+        errorCui.removeAttribute("hidden");
+    } else {
+        errorCui.setAttribute("hidden", " ");
+        console.log("CUI: " + CUI.value + "\nNombres: " + nombre.value + "\nApellidos: " + apellido.value + "\nDepartamento: " + departamento.value + "\nMunicipio: " + municipio.value);
+    }
+
+}
+
+const isCUIValid = (e) => {
+    const pattern = /^\d{10,20}$/;
+    return pattern.test(e);
 }
