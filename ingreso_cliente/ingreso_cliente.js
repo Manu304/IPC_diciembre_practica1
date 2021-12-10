@@ -16,6 +16,6 @@ const ingresar = () => {
 }
 
 const isCUIValid = (e) => {
-    const pattern = /^\d{10,20}$/;
+    const pattern = /^\d{2,20}$/;
     return pattern.test(e);
 }
